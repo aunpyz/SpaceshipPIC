@@ -1,6 +1,6 @@
 "use strict";
 
-const GRAVITY = 0.01;
+const GRAVITY = 0.05;
 const VX = 1 ;
 
 
@@ -192,8 +192,8 @@ function setup() {
       return g.sprite("images/star.png");
     }, 
     ship,       //The container to add the particles to
-    40,               //Number of particles
-    10,              //Gravity
+    20,               //Number of particles
+    1,              //Gravity
     true,             //Random spacing
     1,2);             //Min/max angle
   });
@@ -222,8 +222,8 @@ function fireRocket() {
       return g.sprite("images/star.png");
     }, 
     ship,       //The container to add the particles to
-    5,               //Number of particles
-    0.1,              //Gravity
+    10,            //Number of particles
+    0.05,              //Gravity
     true,             //Random spacing
     1,2);
 
